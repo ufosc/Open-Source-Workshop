@@ -31,7 +31,18 @@ Don't work directly on `main`. Create a branch for your change:
 git checkout -b your-branch-name
 ```
 
-## 4. Commit and Push Your Changes
+## 4. Add Your Slide
+
+For this workshop, your contribution is a Casual Coding PowerPoint slide with videos.
+
+1. Make a copy of `slides/cc-template.pptx`. Don't edit the original template.
+2. Rename your copy to `firstname-lastname-cc-slide.pptx`.
+3. Open your copy and add **at least 2 videos** to your slide.
+4. Save it in the `slides/` folder.
+
+> **Tip:** Embedded videos make PowerPoint files large. GitHub warns on files over 50 MB and blocks files over 100 MB, and uploads through the website are capped at 25 MB. Keep your file small by trimming or compressing your videos, or by linking online videos (e.g., YouTube) instead of embedding them.
+
+## 5. Commit and Push Your Changes
 
 Keep your change small and focused on the issue you picked. Then commit with a short, clear message and push your branch to your fork:
 
@@ -41,15 +52,19 @@ git commit -m "Short description of your change"
 git push origin your-branch-name
 ```
 
-## 5. Open a Pull Request
+## 6. Open a Pull Request
 
 1. Go to your fork on GitHub and click **Compare & pull request**.
 2. Write a short description of what you changed.
-3. Link the issue by adding `Closes #123` (use your issue's number) to the description. GitHub will close the issue automatically when your PR is merged.
+3. Link the issue in the description using the issue's number:
+   - For the slides issue, write `Refs #123`. This links your PR but **keeps the issue open** for everyone else.
+   - For a one-off issue, write `Closes #123`. GitHub will close it automatically when your PR is merged.
+
+> **Note:** Ongoing issues like the slides issue should stay open, so use `Refs`, not `Closes`, `Fixes`, or `Resolves`.
 
 A maintainer will review your pull request. They may leave feedback. Push more commits to the same branch to update it.
 
-## 6. Update Your Main Branch
+## 7. Update Your Main Branch
 
 Once your pull request has been merged, bring those changes into your own `main` branch so it's up to date for your next contribution.
 
